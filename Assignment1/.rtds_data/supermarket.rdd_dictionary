@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
+
+<DictionaryObjects version="10330" language="none" diagramType="sys">
+<Signal id="SIG1" name="enterQ">
+<SignalParameterType>Integer</SignalParameterType>
+<SignalParameterTypeId typeItemId="ITEM3"/>
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB2" positions="0,38"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG2" name="exit">
+<SignalParameterType>Integer</SignalParameterType>
+<SignalParameterTypeId typeItemId="ITEM3"/>
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB2" positions="0,23"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG3" name="enter">
+<SignalParameterType>Integer</SignalParameterType>
+<SignalParameterTypeId typeItemId="ITEM3"/>
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB2" positions="0,7"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG4" name="exitQ">
+<SignalParameterType>Integer</SignalParameterType>
+<SignalParameterTypeId typeItemId="ITEM3"/>
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB2" positions="0,55"/>
+</DefiningSymbols>
+</Signal>
+<Item id="ITEM1" type="system" name="supermarket" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYMB1"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW5" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK22" isFrom="FALSE"/>
+<Connections>
+<Connection name="EnterStore"/>
+</Connections>
+<SentSignals>
+<SignalReference id="SIG3"/>
+</SentSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW6" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK47" isFrom="FALSE"/>
+<Connections>
+<Connection name="ExitStore"/>
+</Connections>
+<ReceivedSignals>
+<SignalReference id="SIG2"/>
+</ReceivedSignals>
+</SignalWindow>
+<Channel name="Queue" fromSignalWindow="SIGWDW4" toSignalWindow="SIGWDW1"/>
+<Channel name="ExitStore" fromSignalWindow="SIGWDW2" toSignalWindow="SIGWDW6"/>
+<Channel name="EnterStore" fromSignalWindow="SIGWDW3" toSignalWindow="SIGWDW5"/>
+</Item>
+<Item id="ITEM2" type="type" name="Boolean" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+</Item>
+<Item id="ITEM3" type="type" name="Integer" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYMB2"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM4" type="block" name="CashierArea" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB7"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB7"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW1" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK46" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG4"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW2" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK47" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG2"/>
+</SentSignals>
+</SignalWindow>
+</Item>
+<Item id="ITEM5" type="block" name="MainSupermarket" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB5"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB5"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW4" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK46" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG1"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG4"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW3" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK22" isFrom="TRUE"/>
+<ReceivedSignals>
+<SignalReference id="SIG3"/>
+</ReceivedSignals>
+</SignalWindow>
+</Item>
+</DictionaryObjects>
