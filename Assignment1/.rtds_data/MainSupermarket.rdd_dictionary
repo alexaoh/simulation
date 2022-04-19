@@ -7,17 +7,12 @@
 </Signal>
 <Signal id="SIG2" name="enterQ">
 </Signal>
-<Signal id="SIG3" name="exitQ">
-</Signal>
 <Item id="ITEM1" type="block" name="MainSupermarket" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYMB1"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW4" insideDiagram="TRUE">
 <ConnectorReference linkId="LINK1" isFrom="TRUE"/>
-<SentSignals>
-<SignalReference id="SIG3"/>
-</SentSignals>
 <ReceivedSignals>
 <SignalReference id="SIG2"/>
 </ReceivedSignals>
@@ -49,9 +44,6 @@
 <SentSignals>
 <SignalReference id="SIG2"/>
 </SentSignals>
-<ReceivedSignals>
-<SignalReference id="SIG3"/>
-</ReceivedSignals>
 </SignalWindow>
 </Item>
 </DictionaryObjects>

@@ -11,9 +11,9 @@
 <Description></Description>
 <Text></Text>
 
-<Symbol symbolId="SYMB2" type="sdlText" xCenter="264" yCenter="44" fixedDimensions="FALSE" width="528" height="44" color="#000000" fillColor="#FFFFFF">
+<Symbol symbolId="SYMB2" type="sdlText" xCenter="209" yCenter="44" fixedDimensions="FALSE" width="418" height="44" color="#000000" fillColor="#FFFFFF">
 <Description></Description>
-<Text>signal enter(Integer), exit(Integer), enterQ(Integer), exitQ(Integer);
+<Text>signal enter(Integer), exit(Integer), enterQ(Integer);
 </Text>
 </Symbol>
 
@@ -24,14 +24,12 @@
 
 <Symbol symbolId="SYMB7" type="sdlBlk" xCenter="264" yCenter="385" fixedDimensions="FALSE" width="110" height="44" color="#000000" fillColor="#C4EFED">
 <Description></Description>
-<Text>CashierArea
-</Text>
+<Text>CashierArea</Text>
 </Symbol>
 </Symbol>
 
 <Link linkId="LINK22" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>EnterStore
-</Text>
+<Text>EnterStore</Text>
 <Connector attachedSymbolId="SYMB5" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[enter]
 </Text>
@@ -47,10 +45,9 @@
 
 <Link linkId="LINK46" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>
-Queue
-</Text>
+Queue</Text>
 <Connector attachedSymbolId="SYMB5" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
-<Text id="1">[exitQ]
+<Text id="1">[]
 </Text>
 <Text id="2"></Text>
 </Connector>
@@ -66,8 +63,7 @@ Queue
 </Link>
 
 <Link linkId="LINK47" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>ExitStore
-</Text>
+<Text>ExitStore</Text>
 <Connector attachedSymbolId="SYMB7" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[]</Text>
 <Text id="2"></Text>
