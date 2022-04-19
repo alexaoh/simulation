@@ -23,9 +23,7 @@
 </ReceivedSignals>
 </Body>
 </Item>
-<Item id="ITEM2" type="variable" name="counter" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-</Item>
-<Item id="ITEM3" type="state" name="Browsing" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM2" type="state" name="Browsing" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM4"/>
 </DefiningSymbols>
@@ -33,7 +31,7 @@
 <SymbolReference symbolId="SYM3"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM4" type="state" name="Done" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM3" type="state" name="Done" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM18"/>
 </DefiningSymbols>

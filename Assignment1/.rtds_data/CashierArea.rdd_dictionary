@@ -3,28 +3,28 @@
 <!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
 
 <DictionaryObjects version="10330" language="none" diagramType="blk">
-<Signal id="SIG1" name="enterQ">
+<Signal id="SIG1" name="exit">
 </Signal>
-<Signal id="SIG2" name="exit">
+<Signal id="SIG2" name="enterQ">
 </Signal>
 <Item id="ITEM1" type="block" name="CashierArea" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYMB1"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW4" insideDiagram="TRUE">
-<ConnectorReference linkId="LINK1" isFrom="TRUE"/>
-<ReceivedSignals>
-<SignalReference id="SIG2"/>
-</ReceivedSignals>
-</SignalWindow>
-<SignalWindow id="SIGWDW3" insideDiagram="TRUE">
 <ConnectorReference linkId="LINK0" isFrom="TRUE"/>
 <SentSignals>
-<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
 </SentSignals>
 </SignalWindow>
-<Channel name="FrontOfQ" fromSignalWindow="SIGWDW3" toSignalWindow="SIGWDW1"/>
-<Channel name="ThroughDoors" fromSignalWindow="SIGWDW4" toSignalWindow="SIGWDW2"/>
+<SignalWindow id="SIGWDW3" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK1" isFrom="TRUE"/>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+</ReceivedSignals>
+</SignalWindow>
+<Channel name="ThroughDoors" fromSignalWindow="SIGWDW3" toSignalWindow="SIGWDW1"/>
+<Channel name="FrontOfQ" fromSignalWindow="SIGWDW4" toSignalWindow="SIGWDW2"/>
 </Item>
 <Item id="ITEM2" type="process" name="Cashiers" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
@@ -34,16 +34,16 @@
 <SymbolReference symbolId="SYMB2"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW1" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK0" isFrom="FALSE"/>
-<ReceivedSignals>
-<SignalReference id="SIG1"/>
-</ReceivedSignals>
-</SignalWindow>
-<SignalWindow id="SIGWDW2" insideDiagram="FALSE">
 <ConnectorReference linkId="LINK1" isFrom="FALSE"/>
 <SentSignals>
-<SignalReference id="SIG2"/>
+<SignalReference id="SIG1"/>
 </SentSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW2" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK0" isFrom="FALSE"/>
+<ReceivedSignals>
+<SignalReference id="SIG2"/>
+</ReceivedSignals>
 </SignalWindow>
 </Item>
 </DictionaryObjects>
