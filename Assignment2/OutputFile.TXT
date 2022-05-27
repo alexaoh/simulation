@@ -1,0 +1,30 @@
+**** EXPERIMENT MyExperiment() ****
+Number of Replications 10
+**** EXPERIMENT MyExperiment() ****
+Number of Replications 10
+**** EXPERIMENT MyExperiment() ****
+Replication result: 1
+Replication result: 2
+Replication result: 3
+Replication result: 4
+Replication result: 5
+Replication result: 6
+Replication result: 7
+Replication result: 8
+Replication result: 9
+Replication result: 10
+**** EXPERIMENT MyExperiment() ****
+Replication result: 1
+Replication result: 2
+Replication result: 3
+Replication result: 4
+Replication result: 5
+Replication result: 6
+Replication result: 7
+Replication result: 8
+Replication result: 9
+Replication result: 10
+**** EXPERIMENT MyExperiment() ****
+Replication result: 300
+Replication result: 300
+Replication result: 300
