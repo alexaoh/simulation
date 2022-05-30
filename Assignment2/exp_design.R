@@ -1,5 +1,4 @@
 library(FrF2)
-?gl
 
 ExperimentDesign <- expand.grid(A = gl(2, 1, labels = c("-", "+")),
                                 B = gl(2, 1, labels = c("-", "+")),
@@ -22,6 +21,7 @@ write.csv(ep, "design.csv", row.names = F)
 library(unrepx)
 yates(y)
 
+# Test linear regression for DOE. Not discussed in report. 
 fit <- lm(formula = y ~ (A + B + C + D)^3, data = ExperimentDesign)
 summary(fit)
 par(mfrow=c(2,2))
